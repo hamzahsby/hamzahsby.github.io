@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Hamzah | Fullstack Developer Portfolio</title>
+    <meta name="description" content="Hamzah - Fullstack Developer specializing in Django, Python, PostgreSQL, Flutter, and Dart. Founder of CleftProjects. Building robust web systems and high-performance mobile apps.">
+    <meta name="keywords" content="Hamzah, Fullstack Developer, Django, Python, PostgreSQL, Flutter, Dart, Web Developer, Mobile Developer, CleftProjects, Portfolio">
+    <meta name="author" content="Hamzah">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hamzahsby.github.io">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hamzahsby.github.io">
+    <meta property="og:title" content="Hamzah | Fullstack Developer Portfolio">
+    <meta property="og:description" content="Building robust web systems with Django & Python, and seamless mobile experiences with Flutter. Founder of CleftProjects.">
+    <meta property="og:image" content="https://hamzahsby.github.io/assets/images/og-image.jpg"> 
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://hamzahsby.github.io">
+    <meta name="twitter:title" content="Hamzah | Fullstack Developer Portfolio">
+    <meta name="twitter:description" content="Building robust web systems with Django & Python, and seamless mobile experiences with Flutter. Founder of CleftProjects.">
+    <meta name="twitter:image" content="https://hamzahsby.github.io/assets/images/og-image.jpg">
+
+    <!-- Favicon & Mobile Icons (Placeholder: Akan kita isi di Backlog) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+    <!-- Styles & Optimized CDN -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Structured Data (JSON-LD) for Person/Developer -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hamzah",
+      "jobTitle": "Fullstack Developer",
+      "url": "https://hamzahsby.github.io",
+      "sameAs": [
+        "https://github.com/cleftprojects",
+      ],
+      "knowsAbout": ["Python", "Django", "PostgreSQL", "Flutter", "Dart", "HTMX", "Alpine.js"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "CleftProjects"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="logo">Hamzah<span class="accent">.</span></a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link" data-en="Home" data-id="Beranda">Home</a></li>
+                <li><a href="#about" class="nav-link" data-en="About" data-id="Tentang">About</a></li>
+                <li><a href="#projects" class="nav-link" data-en="Projects" data-id="Proyek">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-en="Skills" data-id="Keahlian">Skills</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-id="Kontak">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language">
+                    <i class="fas fa-globe"></i> 
+                    <span class="lang-text">ID</span>
+                </button>
+                
+                <div class="hamburger" id="hamburger" aria-label="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-greeting" data-en="Assalamu'alaikum, I'm" data-id="Assalamu'alaikum, Saya">Assalamu'alaikum, I'm</p>
+                <h1 class="hero-title">Hamzah</h1>
+                <p class="hero-role" data-en="Fullstack Developer" data-id="Fullstack Developer">Fullstack Developer</p>
+                
+                <p class="hero-subtitle" 
+                    data-en="Building robust web systems with Django & Python, and seamless mobile experiences with Flutter. Focused on API-first architecture, scalable solutions, and purposeful digital products."
+                    data-id="Membangun sistem web yang tangguh dengan Django & Python, serta pengalaman mobile yang mulus dengan Flutter. Fokus pada arsitektur API-first, solusi yang diskalakan, dan produk digital yang bermakna.">
+                    Building robust web systems with Django & Python, and seamless mobile experiences with Flutter. Focused on API-first architecture, scalable solutions, and purposeful digital products.
+                </p>
+
+                <div class="hero-badges">
+                    <span><i class="fas fa-server"></i> Django & Python</span>
+                    <span><i class="fas fa-database"></i> PostgreSQL</span>
+                    <span><i class="fas fa-bolt"></i> HTMX & Alpine.js</span>
+                    <span><i class="fas fa-mobile-alt"></i> Flutter & Dart</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary" data-en="View My Work" data-id="Lihat Karya Saya">View My Work</a>
+                    <a href="#contact" class="btn btn-outline" data-en="Get In Touch" data-id="Hubungi Saya">Get In Touch</a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator">
+                <span data-en="Scroll Down" data-id="Gulir ke Bawah">Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-en="About Me" data-id="Tentang Saya">About Me</h2>
+                
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <div class="profile-frame">
+                            <img src="assets/images/cleft-projects-profile-hamzah.jpg" alt="Hamzah - Fullstack Developer" class="profile-img">
+                            <div class="frame-decoration"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p data-en="I'm a fullstack developer and founder of <a href='https://cleftprojects.github.io' target='_blank' class='link-accent'>CleftProjects</a>, an indie studio dedicated to building purposeful digital products. I specialize in robust Django backends, fast server-driven web UIs with HTMX & Alpine.js, and seamless mobile experiences with Flutter. All my projects are developed, version-controlled, and released under the <a href='https://github.com/cleftprojects' target='_blank' class='link-accent'>CleftProjects GitHub organization</a>."
+                            data-id="Saya developer fullstack dan pendiri <a href='https://cleftprojects.github.io' target='_blank' class='link-accent'>CleftProjects</a>, studio indie yang berfokus pada produk digital yang bermakna. Saya mengkhususkan diri pada backend Django yang tangguh, UI web cepat dengan HTMX & Alpine.js, serta pengalaman mobile yang mulus dengan Flutter. Seluruh proyek saya dikembangkan, dikelola versi, dan dirilis melalui <a href='https://github.com/cleftprojects' target='_blank' class='link-accent'>organisasi GitHub CleftProjects</a>.">
+                            I'm a fullstack developer and founder of <a href='https://cleftprojects.github.io' target='_blank' class='link-accent'>CleftProjects</a>, an indie studio dedicated to building purposeful digital products. I specialize in robust Django backends, fast server-driven web UIs with HTMX & Alpine.js, and seamless mobile experiences with Flutter. All my projects are developed, version-controlled, and released under the <a href='https://github.com/cleftprojects' target='_blank' class='link-accent'>CleftProjects GitHub organization</a>.
+                            </p>
+                            
+                            <p data-en="My work spans across robust backend systems, fast web interfaces, and high-performance mobile apps. I prioritize clean architecture, automated testing, and scalable design — ensuring every solution is maintainable, secure, and built to deliver real value from day one. From complex platforms to focused digital tools, every project is approached with the same standard: deliberate planning, clean execution, and long-term impact."
+                            data-id="Karya saya mencakup sistem backend yang tangguh, antarmuka web yang cepat, serta aplikasi mobile berkinerja tinggi. Saya mengutamakan arsitektur bersih, pengujian otomatis, dan desain yang diskalakan — memastikan setiap solusi mudah dipelihara, aman, dan memberikan nilai nyata sejak hari pertama. Dari platform berskala besar hingga alat digital yang fokus, setiap proyek dikerjakan dengan standar yang sama: perencanaan matang, eksekusi bersih, dan dampak jangka panjang.">
+                            My work spans across robust backend systems, fast web interfaces, and high-performance mobile apps. I prioritize clean architecture, automated testing, and scalable design — ensuring every solution is maintainable, secure, and built to deliver real value from day one. From complex platforms to focused digital tools, every project is approached with the same standard: deliberate planning, clean execution, and long-term impact.
+                            </p>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <div class="stat-num">3</div>
+                                <div class="stat-label" data-en="Projects Shipped" data-id="Proyek Terkirim">Projects Shipped</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-num">2</div>
+                                <div class="stat-label" data-en="Platforms" data-id="Platform">Platforms</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-num">100%</div>
+                                <div class="stat-label" data-en="Intentional" data-id="Bertujuan">Intentional</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title" data-en="Featured Projects" data-id="Proyek Unggulan">Featured Projects</h2>
+                <p class="section-subtitle" data-en="Some of my recent work" data-id="Beberapa karya terbaru saya">Some of my recent work</p>
+                
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: SIA Ponpes -->
+                    <article class="project-card">
+                            <div class="project-image">
+                                <img src="assets/images/projects/cleft-projects-sistem-informasi-akademik-pondok-pesantren.jpg" alt="Preview SIA Ponpes Dashboard" loading="lazy">
+                            </div>
+                        <div class="project-header">
+                            <h3 data-en="Academic Information System" data-id="Sistem Informasi Akademik">Academic Information System</h3>
+                            <div class="status-badge">
+                                <!-- <span class="badge-live" data-en="🟢 Web Live" data-id="🟢 Web Live">🟢 Web Live</span> -->
+                                <span class="badge-coming" data-en="🟡 Coming Soon" data-id="🟡 Segera Hadir">🟡 Coming Soon</span>
+                            </div>
+                        </div>
+                        <p class="project-desc" 
+                        data-en="API-first academic management system for Islamic boarding schools. Handles multi-program education, role-based access, and financial modules. Built with Django, HTMX, Alpine.js, and Tailwind CSS for a fast, server-driven experience."
+                        data-id="Sistem manajemen akademik berbasis API untuk pondok pesantren. Mengelola multi-program pendidikan, akses berbasis peran, dan modul keuangan. Dibangun dengan Django, HTMX, Alpine.js, dan Tailwind CSS untuk pengalaman server-driven yang cepat.">
+                        API-first academic management system for Islamic boarding schools. Handles multi-program education, role-based access, and financial modules. Built with Django, HTMX, Alpine.js, and Tailwind CSS for a fast, server-driven experience.
+                        </p>
+                        <div class="project-tags">
+                            <span>Django</span><span>DRF</span><span>PostgreSQL</span><span>HTMX</span><span>Alpine.js</span><span>Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link disabled" tabindex="-1" target="_blank">🌐 <span data-en="Demo" data-id="Demo">Demo</span></a>
+                            <a href="#" class="btn-link disabled" tabindex="-1" target="_blank">💻 <span data-en="Code" data-id="Kode">Code</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Tasbih Digital -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/cleft-projects-tasbih-digital.jpg" alt="Preview Dzikr Digital Counter" loading="lazy">
+                        </div>
+                        <div class="project-header">
+                            <h3 data-en="Dzikr Tracker" data-id="Pencatat Dzikir">Dzikr Tracker</h3>
+                            <div class="status-badge">
+                                <span class="badge-shipped" data-en="✅ v1.0.0 Released" data-id="✅ v1.0.0 Rilis">✅ v1.0.0 Released</span>
+                            </div>
+                        </div>
+                        <p class="project-desc"
+                        data-en="Offline-first spiritual companion app. Features local Hive storage, Riverpod state management, haptic/audio feedback, and 100% privacy. No internet or accounts required — just pure focus on dzikir. Track your daily progress with detailed statistics."
+                        data-id="Aplikasi pendamping spiritual offline-first. Menggunakan penyimpanan lokal Hive, state management Riverpod, feedback haptic/audio, dan privasi 100%. Tanpa internet atau akun — fokus murni pada dzikir. Pantau progress harian Anda dengan statistik detail.">
+                        Offline-first spiritual companion app. Features local Hive storage, Riverpod state management, haptic/audio feedback, and 100% privacy. No internet or accounts required — just pure focus on dzikir. Track your daily progress with detailed statistics.
+                        </p>
+                        <div class="project-tags">
+                            <span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Hive</span><span>Clean Architecture</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/cleftprojects/tasbih-digital/releases" class="btn-link" target="_blank">📦 <span data-en="Download APK" data-id="Unduh APK">Download APK</span></a>
+                            <a href="https://github.com/cleftprojects/tasbih-digital" class="btn-link" target="_blank">💻 <span data-en="Code" data-id="Kode">Code</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: CleftProjects Website -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/cleft-projects-website-preview.jpg" alt="Preview CleftProjects Website" loading="lazy">
+                        </div>
+                        <div class="project-header">
+                            <h3 data-en="CleftProjects Website" data-id="Website CleftProjects">CleftProjects Website</h3>
+                            <div class="status-badge">
+                                <span class="badge-live" data-en="🌐 Live" data-id="🌐 Live">🌐 Live</span>
+                                <span class="badge-vanilla" data-en="⚡ Zero-Framework" data-id="⚡ Tanpa Framework">⚡ Zero-Framework</span>
+                            </div>
+                        </div>
+                        <p class="project-desc"
+                        data-en="Official portfolio & studio site for CleftProjects. Built with vanilla HTML, CSS, and JavaScript for maximum performance, SEO, and maintainability. Showcases our indie studio philosophy: finding gaps, building solutions."
+                        data-id="Website resmi & portofolio untuk CleftProjects. Dibangun dengan HTML, CSS, dan JavaScript vanilla untuk performa maksimal, SEO, dan kemudahan pemeliharaan. Mencerminkan filosofi studio indie kami: menemukan celah, membangun solusi.">
+                        Official portfolio & studio site for CleftProjects. Built with vanilla HTML, CSS, and JavaScript for maximum performance, SEO, and maintainability. Showcases our indie studio philosophy: finding gaps, building solutions.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SEO</span><span>Performance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://cleftprojects.github.io" class="btn-link" target="_blank">🌐 <span data-en="Visit Site" data-id="Kunjungi Situs">Visit Site</span></a>
+                            <a href="https://github.com/cleftprojects/cleftprojects.github.io" class="btn-link" target="_blank">💻 <span data-en="Code" data-id="Kode">Code</span></a>
+                        </div>
+                    </article>
+
+                </div>
+                
+                <div class="center-btn">
+                    <a href="https://github.com/cleftprojects" target="_blank" class="btn btn-outline" data-en="View All on GitHub" data-id="Lihat Semua di GitHub">View All on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-en="Skills & Technologies" data-id="Keahlian & Teknologi">Skills & Technologies</h2>
+                <p class="section-subtitle" data-en="Tools and technologies I work with" data-id="Alat dan teknologi yang saya gunakan">Tools and technologies I work with</p>
+                
+                <div class="skills-grid">
+                    <!-- Backend -->
+                    <div class="skill-category">
+                        <h3>
+                            <i class="fas fa-server"></i> 
+                            <span data-en="Backend" data-id="Backend">Backend</span>
+                        </h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Django REST Framework</li>
+                            <li>Django Testing</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+
+                    <!-- Frontend Web -->
+                    <div class="skill-category">
+                        <h3>
+                            <i class="fas fa-laptop-code"></i> 
+                            <span data-en="Frontend" data-id="Frontend">Frontend</span>
+                        </h3>
+                        <ul class="skill-list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>HTMX</li>
+                            <li>Alpine.js</li>
+                        </ul>
+                    </div>
+
+                    <!-- Mobile Development -->
+                    <div class="skill-category">
+                        <h3>
+                            <i class="fas fa-mobile-alt"></i> 
+                            <span data-en="Mobile" data-id="Mobile">Mobile</span>
+                        </h3>
+                        <ul class="skill-list">
+                            <li>Dart</li>
+                            <li>Flutter</li>
+                            <li>Riverpod</li>
+                            <li>SQLite</li>
+                            <li>Hive</li>
+                        </ul>
+                    </div>
+
+                    <!-- DevOps & Tools -->
+                    <div class="skill-category">
+                        <h3>
+                            <i class="fas fa-tools"></i> 
+                            <span data-en="DevOps & Tools" data-id="DevOps & Alat">DevOps & Tools</span>
+                        </h3>
+                        <ul class="skill-list">
+                            <li>Git & GitHub</li>
+                            <li>Docker</li>
+                            <li>Linux</li>
+                            <li>Nginx</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title" data-en="Get In Touch" data-id="Hubungi Saya">Get In Touch</h2>
+                <p class="section-subtitle" data-en="Let's collaborate on your next projects" data-id="Siap berkolaborasi untuk proyek-proyek Anda selanjutnya.">Let's collaborate on your next project</p>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-en="Email" data-id="Email">Email</h4>
+                                <a href="mailto:hamzah.sby@gmail.com" class="link-accent">hamzah.sby@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4 data-en="GitHub" data-id="GitHub">GitHub</h4>
+                                <a href="https://github.com/cleftprojects" target="_blank" class="link-accent">CleftProjects</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i> 
+                            <div>
+                                <h4 data-en="Studio" data-id="Studio">Studio</h4>
+                                <a href="https://cleftprojects.github.io" target="_blank" class="link-accent">CleftProjects</a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- Formspree Contact Form -->
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xykagjap" method="POST">
+                        <div class="form-group">
+                            <label for="name" data-en="Name" data-id="Nama">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-en="Email" data-id="Email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-en="Subject" data-id="Judul">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-en="Message" data-id="Pesan">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn" data-en="Send Message" data-id="Kirim Pesan">Send Message</button>
+                        <div id="form-notification" class="form-notification" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Hamzah<span class="accent">.</span></h3>
+                <p data-en="Finding gaps. Building solutions." data-id="Menemukan celah. Membangun solusi.">Finding gaps. Building solutions.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home" data-en="Home" data-id="Beranda" class="link-accent">Home</a>
+                <a href="#about" data-en="About" data-id="Tentang" class="link-accent">About</a>
+                <a href="#projects" data-en="Projects" data-id="Proyek" class="link-accent">Projects</a>
+                <a href="#skills" data-en="Skills" data-id="Kemampuan" class="link-accent">Skills</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="copyright-year"></span> Hamzah. <span data-en="All rights reserved." data-id="Hak cipta dilindungi undang-undang.">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8T4DKH3E4W"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8T4DKH3E4W');
+    </script>
+</body>
+</html>
